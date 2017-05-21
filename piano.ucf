@@ -1,0 +1,23 @@
+#outputs
+
+NET "wave[]" LOC="";
+NET "wave[]" LOC="";
+NET "wave[]" LOC="";
+NET "wave[]" LOC="";
+NET "wave[]" LOC="";
+NET "wave[]" LOC="";
+NET "wave[]" LOC="";
+NET "wave[]" LOC="";
+
+#inputs
+
+NET "chord[]" LOC="";
+NET "[]" LOC="";
+NET "[]" LOC="";
+NET "[]" LOC="";
+NET "[]" LOC="";
+NET "[]" LOC="";
+NET "[]" LOC="";
+NET "[]" LOC="";
+NET "[]" LOC="";
+NET "[]" LOC="";
