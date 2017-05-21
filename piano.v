@@ -24,9 +24,12 @@ module piano( wave, t0,t1,t2,t3,t4,t5,t6,t7,clk);
         GET_FREQ:         
           begin
             divfreq note0(freq,chord,clk);
+            STATE=READ;
           end 
-          
         READ:
+          begin
+            
+          end
         SUM:
         PLAY:
         endcase    
