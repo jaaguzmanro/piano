@@ -1,22 +1,22 @@
 #outputs
 
-NET "wave[0]" LOC="";
-NET "wave[1]" LOC="";
-NET "wave[2]" LOC="";
-NET "wave[3]" LOC="";
-NET "wave[4]" LOC="";
-NET "wave[5]" LOC="";
-NET "wave[6]" LOC="";
-NET "wave[7]" LOC="";
+NET "wave[0]" LOC="G1";
+NET "wave[1]" LOC="P4";
+NET "wave[2]" LOC="N4";
+NET "wave[3]" LOC="N5";
+NET "wave[4]" LOC="P6";
+NET "wave[5]" LOC="P7";
+NET "wave[6]" LOC="M11";
+NET "wave[7]" LOC="M5";
 
 #inputs
 
-NET "t0" LOC="";
-NET "t1" LOC="";
-NET "t2" LOC="";
-NET "t3" LOC="";
-NET "t4" LOC="";
-NET "t5" LOC="";
-NET "t6" LOC="";
-NET "t7" LOC="";
-NET "clk" LOC="";
+NET "t0" LOC="N3";
+NET "t1" LOC="E2";
+NET "t2" LOC="F3";
+NET "t3" LOC="G3";
+NET "t4" LOC="B4";
+NET "t5" LOC="K3";
+NET "t6" LOC="L3";
+NET "t7" LOC="P11";
+NET "clk" LOC="B8";
