@@ -57,10 +57,10 @@ module piano( wave, t0,t1,t2,t3,t4,t5,t6,t7,clk);
           end
         PLAY:assign wave <= sum7;
         endcase    
-    end
+    end 
  
 
 
 
 
-end module
+endmodule
