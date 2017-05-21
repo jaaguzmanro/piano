@@ -1,10 +1,9 @@
-module sumres(res,sig,a,b
+module sumres(res,a,b,ci
     );
 output wire [7:0] res;
-output sig;
+output ci;
 input wire [7:0] a;
 input wire [7:0] b;
-wire ci;
 wire co= 0;
 wire co1,co2,co3,co4,co5,co6,co7,co8;
 wire s1,s2,s3,s4,s5,s6,s7,s8;
