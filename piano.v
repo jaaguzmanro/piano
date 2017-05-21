@@ -37,8 +37,9 @@ module piano( wave, t0,t1,t2,t3,t4,t5,t6,t7,clk);
             rom n5(freq[5],wave5);
             rom n6(freq[6],wave6);
             rom n7(freq[7],wave7);
+            STATE = SUM;
           end
-          STATE = SUM;
+          
         SUM:
           begin
             sumres suma1(sum1,wave0,wave1,ci0);//res,sig,a,b,ci,ctrl 
