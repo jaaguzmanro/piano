@@ -23,7 +23,7 @@ module piano( wave, t0,t1,t2,t3,t4,t5,t6,t7,clk);
           end  
         GET_FREQ:         
           begin
-            divfreq note0(freq,chord);
+            divfreq note0(freq,chord,clk);
           end 
           
         READ:
