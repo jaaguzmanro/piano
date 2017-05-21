@@ -1,23 +1,22 @@
 #outputs
 
-NET "wave[]" LOC="";
-NET "wave[]" LOC="";
-NET "wave[]" LOC="";
-NET "wave[]" LOC="";
-NET "wave[]" LOC="";
-NET "wave[]" LOC="";
-NET "wave[]" LOC="";
-NET "wave[]" LOC="";
+NET "wave[0]" LOC="";
+NET "wave[1]" LOC="";
+NET "wave[2]" LOC="";
+NET "wave[3]" LOC="";
+NET "wave[4]" LOC="";
+NET "wave[5]" LOC="";
+NET "wave[6]" LOC="";
+NET "wave[7]" LOC="";
 
 #inputs
 
-NET "chord[]" LOC="";
-NET "[]" LOC="";
-NET "[]" LOC="";
-NET "[]" LOC="";
-NET "[]" LOC="";
-NET "[]" LOC="";
-NET "[]" LOC="";
-NET "[]" LOC="";
-NET "[]" LOC="";
-NET "[]" LOC="";
+NET "t0" LOC="";
+NET "t1" LOC="";
+NET "t2" LOC="";
+NET "t3" LOC="";
+NET "t4" LOC="";
+NET "t5" LOC="";
+NET "t6" LOC="";
+NET "t7" LOC="";
+NET "clk" LOC="";
