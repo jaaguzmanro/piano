@@ -24,13 +24,13 @@ input clk;
     
     
     div div0(freq[0],n0,clk);
-    div div1(freq[1],n0,clk);
-    div div2(freq[2],n0,clk);
-    div div3(freq[3],n0,clk);
-    div div4(freq[4],n0,clk);
-    div div5(freq[5],n0,clk);
-    div div6(freq[6],n0,clk);
-    div div7(freq[7],n0,clk);
+    div div1(freq[1],n1,clk);
+    div div2(freq[2],n2,clk);
+    div div3(freq[3],n3,clk);
+    div div4(freq[4],n4,clk);
+    div div5(freq[5],n5,clk);
+    div div6(freq[6],n6,clk);
+    div div7(freq[7],n7,clk);
     
     
 
