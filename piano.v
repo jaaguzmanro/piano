@@ -12,7 +12,7 @@ module piano( wave, t0,t1,t2,t3,t4,t5,t6,t7,clk);
   wire [7:0] Chord= 8'b00000000;
   wire [7:0] freq= 8'b00000000;
   wire [7:0] wave1,wave2,wave3,wave4,wave5,wave6,wave7,wave0,sum1,sum2,sum3,sum4,sum5;
- 
+  wire ci0,ci1,ci2,ci3,ci4,ci5;
   
   always @(posedge clk)
     begin
@@ -38,14 +38,19 @@ module piano( wave, t0,t1,t2,t3,t4,t5,t6,t7,clk);
             rom n6(freq[6],wave6);
             rom n7(freq[7],wave7);
           end
+          STATE = SUM;
         SUM:
           begin
-            sumres suma1(sum1,wave0,wave1,ci)res,sig,a,b,ci,ctrl 
-          
-          
+            sumres suma1(sum1,wave0,wave1,ci0);//res,sig,a,b,ci,ctrl 
+            sumres suma2(sum2,wave2,sum1,ci0);
+            sumres suma3(sum3,wave3,sum2,ci0);
+            sumres suma4(sum4,wave4,sum3,ci0);
+            sumres suma5(sum5,wave5,sum4,ci0);
+            sumres suma6(sum6,wave6,sum5,ci0);
+            sumres suma7(sum7,wave7,sum6,ci0);      
+            STATE=PLAY;
           end
-          
-        PLAY:
+        PLAY:assign wave <= sum7;
         endcase    
     end
  
