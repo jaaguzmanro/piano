@@ -1,16 +1,15 @@
 module rom(input clk,
-                input wire [4:0] addr,
-                output reg [3:0] data);
-
-
+           output reg [3:0] data);
+  wire [255:0] addr;
   reg [7:0] rom [0:127];
   always @(negedge clk) begin
+    addr <= addr + 1;
     data <= rom[addr];
   end
 
 
   initial begin
-    rom[0]=00000000;
+rom[0]=00000000;
 rom[1]=00000001;
 rom[2]=00000010;
 rom[3]=00000011;
