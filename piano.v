@@ -11,7 +11,7 @@ module piano( wave, t0,t1,t2,t3,t4,t5,t6,t7,clk);
   wire [3:0] PLAY= 3'b100;
   wire [7:0] Chord= 8'b00000000;
   wire [7:0] freq= 8'b00000000;
-  wire [7:0] wave1,wave2,wave3,wave4,wave5,wave6,wave7,wave0,sum1,sum2,sum3,sum4,sum5;
+  wire [7:0] wave1,wave2,wave3,wave4,wave5,wave6,wave7,wave0,sum1,sum2,sum3,sum4,sum5,sum6,sum7;
   wire ci0,ci1,ci2,ci3,ci4,ci5;
   
   always @(posedge clk)
