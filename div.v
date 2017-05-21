@@ -1,4 +1,4 @@
-module div(scaler,clk_out,clk_in)
+module div(clk_out,scaler,clk_in)
     input reg [2:0]scaler
 input clk_in;
 output clk_out;
