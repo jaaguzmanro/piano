@@ -2,19 +2,13 @@ module rom(input clk,
                 input wire [4:0] addr,
                 output reg [3:0] data);
 
-  //-- Memoria
-  reg [7:0] rom [0:127];
 
-  //-- Proceso de acceso a la memoria. 
-  //-- Se ha elegido flanco de bajada en este ejemplo, pero
-  //-- funciona igual si es de subida
+  reg [7:0] rom [0:127];
   always @(negedge clk) begin
     data <= rom[addr];
   end
 
-//-- Inicializacion de la memoria. 
-//-- Solo se dan valores a las 8 primeras posiciones
-//-- El resto permanecera a 0
+
   initial begin
     rom[0]=00000000;
 rom[1]=00000001;
