@@ -16,7 +16,7 @@ module piano( wave, t0,t1,t2,t3,t4,t5,t6,t7,clk);
   wire [7:0]clks;
   
   
-   divfreq note0(freq,chord,clk);
+	divfreq note0(freq,Chord,clk);
 	assign clks = freq;
             rom n0(clks[0],wave0);
             rom n1(clks[1],wave1);
