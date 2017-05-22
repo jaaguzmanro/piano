@@ -32,5 +32,5 @@ input clk;
     div div5(notes[5],m5,clk);
     div div6(notes[6],m6,clk);
     div div7(notes[7],m7,clk);
-      
+      assign freq= notes;
 endmodule
