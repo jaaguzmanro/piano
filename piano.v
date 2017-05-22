@@ -27,34 +27,14 @@ module piano( wave, t0,t1,t2,t3,t4,t5,t6,t7,clk);
   	assign sim = t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7;
 
 	
-assign sound = (sim==0) ? sound = 0:
-	       (sim==1) ? sound = wavef[7:0]:
-	(sim==2) ? sound = wavef[8:1]:
-	(sim==3) ? sound = wavef[9:2]:
-	(sim==4) ? sound = wavef[10:3]:
-	(sim==5) ? sound = wavef[11:4]:
-	(sim==6) ? sound = wavef[12:5]:
-	(sim==7) ? sound = wavef[13:6]:
-	(sim==8) ? sound = wavef[14:7];
-	
-	case  (sim)
-
-0: sound = 0;
-1: sound = wavef[7:0];
-	
-2: sound = wavef[8:1];
-	
-3: sound = wavef[9:2];
-4: sound = wavef[10:3];
-	
-5: sound = wavef[11:4];
-	
-6: sound = wavef[12:5];
-	
-7: sound = wavef[13:6];
-
-8: sound = wavef[14:7];
-
-endcase
+	assign sound = (sim==0) ? 0:
+						(sim==1) ?  wavef[7:0]:
+						(sim==2) ?  wavef[8:1]:
+						(sim==3) ?  wavef[9:2]:
+						(sim==4) ?  wavef[10:3]:
+						(sim==5) ?  wavef[11:4]:
+						(sim==6) ?  wavef[12:5]:
+						(sim==7) ?  wavef[13:6]:
+						(sim==8) ?  wavef[14:7];
 
 endmodule
