@@ -35,6 +35,7 @@ module piano( wave, t0,t1,t2,t3,t4,t5,t6,t7,clk);
 						(sim==5) ?  wavef[11:4]:
 						(sim==6) ?  wavef[12:5]:
 						(sim==7) ?  wavef[13:6]:
-						(sim==8) ?  wavef[14:7];
+		(sim==8) ?  wavef[14:7]:
+		wavef[15];
 
 endmodule
