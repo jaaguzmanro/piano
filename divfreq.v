@@ -11,7 +11,8 @@ input clk;
     wire [2:0] n4=3'b100;    
     wire [2:0] n5=3'b101;    
     wire [2:0] n6=3'b110;    
-    wire [2:0] n7=3'b111;    
+    wire [2:0] n7=3'b111; 
+    wire [7:0] notes;
     wire[2:0] m0,m1,m2,m3,m4,m5,m6,m7;
     assign m0=n0*chord[0];
     assign m1=n1*chord[1];
@@ -22,14 +23,14 @@ input clk;
     assign m6=n6*chord[6];
     assign m7=n7*chord[7];
     
-    
-    div div0(freq[0],m0,clk);
-    div div1(freq[1],m1,clk);
-    div div2(freq[2],m2,clk);
-    div div3(freq[3],m3,clk);
-    div div4(freq[4],m4,clk);
-    div div5(freq[5],m5,clk);
-    div div6(freq[6],m6,clk);
-    div div7(freq[7],m7,clk);
+    assign notes= freq;
+    div div0(notes[0],m0,clk);
+    div div1(notes[1],m1,clk);
+    div div2(notes[2],m2,clk);
+    div div3(notes[3],m3,clk);
+    div div4(notes[4],m4,clk);
+    div div5(notes[5],m5,clk);
+    div div6(notes[6],m6,clk);
+    div div7(notes[7],m7,clk);
       
 endmodule
