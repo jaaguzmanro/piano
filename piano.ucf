@@ -1,13 +1,13 @@
 #outputs
 
-NET "wave[0]" LOC="G1";
-NET "wave[1]" LOC="P4";
-NET "wave[2]" LOC="N4";
-NET "wave[3]" LOC="N5";
-NET "wave[4]" LOC="P6";
-NET "wave[5]" LOC="P7";
-NET "wave[6]" LOC="M11";
-NET "wave[7]" LOC="M5";
+NET "wave[0]" LOC="B2";
+NET "wave[1]" LOC="A3";
+NET "wave[2]" LOC="J3";
+NET "wave[3]" LOC="B5";
+NET "wave[4]" LOC="C6";
+NET "wave[5]" LOC="B6";
+NET "wave[6]" LOC="C5";
+NET "wave[7]" LOC="B7";
 
 #inputs
 
