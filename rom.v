@@ -1,5 +1,5 @@
 module rom(input clk,
-           output reg [8:0] addr);
+           output reg [7:0] addr);
   
   always @(negedge clk) 
   begin
