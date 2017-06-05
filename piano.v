@@ -4,14 +4,22 @@ module piano(sound, t0,t1,t2,t3,t4,t5,t6,t7,clk);
   output wire[7:0] sound;
   input t0,t1,t2,t3,t4,t5,t6,t7,clk;
   
-   reg [7:0] Chord= 8'b00000000;
-  wire [7:0] freq= 8'b00000000;
+   wire [7:0] Chord;
+  wire [7:0] freq;
 	wire[3:0] sim,n;
 	wire [7:0] wave1,wave2,wave3,wave4,wave5,wave6,wave0,wave7;
   wire ci0,ci1,ci2,ci3,ci4,ci5;
   wire [7:0]clks;
 	wire [15:0]wavef;
   
+  assign Chord[0]=t0;
+  assign Chord[1]=t1;
+  assign Chord[2]=t2;
+  assign Chord[3]=t3;
+  assign Chord[4]=t4;
+  assign Chord[5]=t5;
+  assign Chord[6]=t6;
+  assign Chord[7]=t7;
   
 	divfreq note0(freq,Chord,clk);
 	assign clks = freq;
@@ -24,7 +32,7 @@ module piano(sound, t0,t1,t2,t3,t4,t5,t6,t7,clk);
             rom n6(clks[6],wave6);
             rom n7(clks[7],wave7);
  	assign wavef= wave0+wave1+wave2+wave3+wave4+wave5+wave6+wave7; 
-  	assign sim = t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7;
+   assign sim = t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7;
 
 	assign sound = (sim==0) ? 0:
 	(sim==1) ?  wavef[7:0]:
